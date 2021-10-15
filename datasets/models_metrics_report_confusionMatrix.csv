@@ -1,0 +1,141 @@
+,score,metric,model,balanced
+0,0.06,True Neg,Logestic  Regression / L2,no
+1,0.01,False Pos,Logestic  Regression / L2,no
+2,0.02,False Neg,Logestic  Regression / L2,no
+3,0.91,True Pos,Logestic  Regression / L2,no
+4,0.06,True Neg,Logestic  Regression / L2,no
+5,0.01,False Pos,Logestic  Regression / L2,no
+6,0.02,False Neg,Logestic  Regression / L2,no
+7,0.91,True Pos,Logestic  Regression / L2,no
+8,0.05,True Neg,Decision Tree,no
+9,0.02,False Pos,Decision Tree,no
+10,0.03,False Neg,Decision Tree,no
+11,0.9,True Pos,Decision Tree,no
+12,0.07,True Neg,Logestic  Regression / L1,no
+13,0.0,False Pos,Logestic  Regression / L1,no
+14,0.04,False Neg,Logestic  Regression / L1,no
+15,0.88,True Pos,Logestic  Regression / L1,no
+16,0.36,True Neg,Decision Tree,yes
+17,0.08,False Pos,Decision Tree,yes
+18,0.07,False Neg,Decision Tree,yes
+19,0.49,True Pos,Decision Tree,yes
+20,0.42,True Neg,Decision Tree/GridSearchCV,yes
+21,0.02,False Pos,Decision Tree/GridSearchCV,yes
+22,0.14,False Neg,Decision Tree/GridSearchCV,yes
+23,0.42,True Pos,Decision Tree/GridSearchCV,yes
+24,0.38,True Neg,Bagging,yes
+25,0.06,False Pos,Bagging,yes
+26,0.08,False Neg,Bagging,yes
+27,0.48,True Pos,Bagging,yes
+28,0.42,True Neg,Bagging-GridSearchCV,yes
+29,0.03,False Pos,Bagging-GridSearchCV,yes
+30,0.13,False Neg,Bagging-GridSearchCV,yes
+31,0.43,True Pos,Bagging-GridSearchCV,yes
+32,0.05,True Neg,Bagging,no
+33,0.02,False Pos,Bagging,no
+34,0.03,False Neg,Bagging,no
+35,0.9,True Pos,Bagging,no
+36,0.4,True Neg,Random Forests,yes
+37,0.04,False Pos,Random Forests,yes
+38,0.04,False Neg,Random Forests,yes
+39,0.52,True Pos,Random Forests,yes
+40,0.39,True Neg,ExtraTrees,yes
+41,0.05,False Pos,ExtraTrees,yes
+42,0.03,False Neg,ExtraTrees,yes
+43,0.53,True Pos,ExtraTrees,yes
+44,0.03,True Neg,ExtraTrees,no
+45,0.04,False Pos,ExtraTrees,no
+46,0.0,False Neg,ExtraTrees,no
+47,0.93,True Pos,ExtraTrees,no
+48,0.41,True Neg,Adaboost,yes
+49,0.03,False Pos,Adaboost,yes
+50,0.08,False Neg,Adaboost,yes
+51,0.48,True Pos,Adaboost,yes
+52,0.4,True Neg,Adaboost-GridSearchCV,yes
+53,0.04,False Pos,Adaboost-GridSearchCV,yes
+54,0.06,False Neg,Adaboost-GridSearchCV,yes
+55,0.5,True Pos,Adaboost-GridSearchCV,yes
+56,0.06,True Neg,Adaboost,no
+57,0.01,False Pos,Adaboost,no
+58,0.07,False Neg,Adaboost,no
+59,0.86,True Pos,Adaboost,no
+60,0.42,True Neg,Gradient Boosting,yes
+61,0.02,False Pos,Gradient Boosting,yes
+62,0.08,False Neg,Gradient Boosting,yes
+63,0.48,True Pos,Gradient Boosting,yes
+64,0.06,True Neg,Adaboost-GridSearchCV,no
+65,0.01,False Pos,Adaboost-GridSearchCV,no
+66,0.05,False Neg,Adaboost-GridSearchCV,no
+67,0.88,True Pos,Adaboost-GridSearchCV,no
+68,0.41,True Neg,GradientBoosting-GridSearchCV,yes
+69,0.03,False Pos,GradientBoosting-GridSearchCV,yes
+70,0.06,False Neg,GradientBoosting-GridSearchCV,yes
+71,0.5,True Pos,GradientBoosting-GridSearchCV,yes
+72,0.41,True Neg,xgboost,yes
+73,0.03,False Pos,xgboost,yes
+74,0.05,False Neg,xgboost,yes
+75,0.5,True Pos,xgboost,yes
+76,0.07,True Neg,Bagging-GridSearchCV,no
+77,0.0,False Pos,Bagging-GridSearchCV,no
+78,0.13,False Neg,Bagging-GridSearchCV,no
+79,0.8,True Pos,Bagging-GridSearchCV,no
+80,0.41,True Neg,xgboost-GridSearchCV,yes
+81,0.03,False Pos,xgboost-GridSearchCV,yes
+82,0.07,False Neg,xgboost-GridSearchCV,yes
+83,0.49,True Pos,xgboost-GridSearchCV,yes
+84,0.06,True Neg,xgboost,no
+85,0.01,False Pos,xgboost,no
+86,0.03,False Neg,xgboost,no
+87,0.89,True Pos,xgboost,no
+88,0.06,True Neg,xgboost-GridSearchCV,no
+89,0.01,False Pos,xgboost-GridSearchCV,no
+90,0.06,False Neg,xgboost-GridSearchCV,no
+91,0.87,True Pos,xgboost-GridSearchCV,no
+92,0.41,True Neg,MultinomialNB,yes
+93,0.03,False Pos,MultinomialNB,yes
+94,0.06,False Neg,MultinomialNB,yes
+95,0.5,True Pos,MultinomialNB,yes
+96,0.41,True Neg,MultinomialNB-GridSearchCV,yes
+97,0.03,False Pos,MultinomialNB-GridSearchCV,yes
+98,0.06,False Neg,MultinomialNB-GridSearchCV,yes
+99,0.5,True Pos,MultinomialNB-GridSearchCV,yes
+100,0.06,True Neg,MultinomialNB,no
+101,0.01,False Pos,MultinomialNB,no
+102,0.03,False Neg,MultinomialNB,no
+103,0.89,True Pos,MultinomialNB,no
+104,0.43,True Neg,Random Forests-GridSearchCV,yes
+105,0.02,False Pos,Random Forests-GridSearchCV,yes
+106,0.1,False Neg,Random Forests-GridSearchCV,yes
+107,0.46,True Pos,Random Forests-GridSearchCV,yes
+108,0.06,True Neg,MultinomialNB-GridSearchCV,no
+109,0.01,False Pos,MultinomialNB-GridSearchCV,no
+110,0.03,False Neg,MultinomialNB-GridSearchCV,no
+111,0.89,True Pos,MultinomialNB-GridSearchCV,no
+112,0.42,True Neg,Support Vector,yes
+113,0.03,False Pos,Support Vector,yes
+114,0.07,False Neg,Support Vector,yes
+115,0.48,True Pos,Support Vector,yes
+116,0.42,True Neg,Support Vector - GridSearchCV,yes
+117,0.02,False Pos,Support Vector - GridSearchCV,yes
+118,0.06,False Neg,Support Vector - GridSearchCV,yes
+119,0.49,True Pos,Support Vector - GridSearchCV,yes
+120,0.04,True Neg,Random Forests,no
+121,0.03,False Pos,Random Forests,no
+122,0.0,False Neg,Random Forests,no
+123,0.92,True Pos,Random Forests,no
+124,0.07,True Neg,Gradient Boosting,no
+125,0.0,False Pos,Gradient Boosting,no
+126,0.08,False Neg,Gradient Boosting,no
+127,0.85,True Pos,Gradient Boosting,no
+128,0.06,True Neg,Support Vector,no
+129,0.01,False Pos,Support Vector,no
+130,0.03,False Neg,Support Vector,no
+131,0.9,True Pos,Support Vector,no
+132,0.05,True Neg,Logestic  Regression / Full-GridSearchCV,no
+133,0.02,False Pos,Logestic  Regression / Full-GridSearchCV,no
+134,0.02,False Neg,Logestic  Regression / Full-GridSearchCV,no
+135,0.91,True Pos,Logestic  Regression / Full-GridSearchCV,no
+136,0.05,True Neg,Logestic  Regression / Full-GridSearchCV,no
+137,0.02,False Pos,Logestic  Regression / Full-GridSearchCV,no
+138,0.02,False Neg,Logestic  Regression / Full-GridSearchCV,no
+139,0.91,True Pos,Logestic  Regression / Full-GridSearchCV,no

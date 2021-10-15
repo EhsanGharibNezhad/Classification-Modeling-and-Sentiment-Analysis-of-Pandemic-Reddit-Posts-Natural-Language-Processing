@@ -1,0 +1,141 @@
+,is_pandemicPreps,is_covid19positive,metric,model,balanced
+0,0.73,0.99,precision,Logestic  Regression / L2,no
+1,0.84,0.98,recall,Logestic  Regression / L2,no
+2,0.78,0.98,fscore,Logestic  Regression / L2,no
+3,585.0,7692.0,support,Logestic  Regression / L2,no
+4,0.73,0.99,precision,Logestic  Regression / L2,no
+5,0.84,0.98,recall,Logestic  Regression / L2,no
+6,0.78,0.98,fscore,Logestic  Regression / L2,no
+7,585.0,7692.0,support,Logestic  Regression / L2,no
+8,0.65,0.97,precision,Decision Tree,no
+9,0.66,0.97,recall,Decision Tree,no
+10,0.66,0.97,fscore,Decision Tree,no
+11,585.0,7692.0,support,Decision Tree,no
+12,0.6,0.99,precision,Logestic  Regression / L1,no
+13,0.93,0.95,recall,Logestic  Regression / L1,no
+14,0.73,0.97,fscore,Logestic  Regression / L1,no
+15,585.0,7692.0,support,Logestic  Regression / L1,no
+16,0.84,0.86,precision,Decision Tree,yes
+17,0.82,0.88,recall,Decision Tree,yes
+18,0.83,0.87,fscore,Decision Tree,yes
+19,586.0,740.0,support,Decision Tree,yes
+20,0.75,0.95,precision,Decision Tree/GridSearchCV,yes
+21,0.95,0.75,recall,Decision Tree/GridSearchCV,yes
+22,0.84,0.84,fscore,Decision Tree/GridSearchCV,yes
+23,586.0,740.0,support,Decision Tree/GridSearchCV,yes
+24,0.83,0.88,precision,Bagging,yes
+25,0.85,0.86,recall,Bagging,yes
+26,0.84,0.87,fscore,Bagging,yes
+27,586.0,740.0,support,Bagging,yes
+28,0.76,0.94,precision,Bagging-GridSearchCV,yes
+29,0.94,0.77,recall,Bagging-GridSearchCV,yes
+30,0.84,0.85,fscore,Bagging-GridSearchCV,yes
+31,586.0,740.0,support,Bagging-GridSearchCV,yes
+32,0.63,0.98,precision,Bagging,no
+33,0.71,0.97,recall,Bagging,no
+34,0.67,0.97,fscore,Bagging,no
+35,585.0,7692.0,support,Bagging,no
+36,0.91,0.93,precision,Random Forests,yes
+37,0.91,0.93,recall,Random Forests,yes
+38,0.91,0.93,fscore,Random Forests,yes
+39,586.0,740.0,support,Random Forests,yes
+40,0.93,0.92,precision,ExtraTrees,yes
+41,0.89,0.95,recall,ExtraTrees,yes
+42,0.91,0.93,fscore,ExtraTrees,yes
+43,586.0,740.0,support,ExtraTrees,yes
+44,0.92,0.96,precision,ExtraTrees,no
+45,0.43,1.0,recall,ExtraTrees,no
+46,0.58,0.98,fscore,ExtraTrees,no
+47,585.0,7692.0,support,ExtraTrees,no
+48,0.84,0.94,precision,Adaboost,yes
+49,0.92,0.86,recall,Adaboost,yes
+50,0.88,0.89,fscore,Adaboost,yes
+51,586.0,740.0,support,Adaboost,yes
+52,0.88,0.93,precision,Adaboost-GridSearchCV,yes
+53,0.91,0.9,recall,Adaboost-GridSearchCV,yes
+54,0.89,0.91,fscore,Adaboost-GridSearchCV,yes
+55,586.0,740.0,support,Adaboost-GridSearchCV,yes
+56,0.47,0.99,precision,Adaboost,no
+57,0.91,0.92,recall,Adaboost,no
+58,0.62,0.96,fscore,Adaboost,no
+59,585.0,7692.0,support,Adaboost,no
+60,0.84,0.96,precision,Gradient Boosting,yes
+61,0.95,0.85,recall,Gradient Boosting,yes
+62,0.89,0.9,fscore,Gradient Boosting,yes
+63,586.0,740.0,support,Gradient Boosting,yes
+64,0.54,0.99,precision,Adaboost-GridSearchCV,no
+65,0.91,0.94,recall,Adaboost-GridSearchCV,no
+66,0.68,0.97,fscore,Adaboost-GridSearchCV,no
+67,585.0,7692.0,support,Adaboost-GridSearchCV,no
+68,0.88,0.94,precision,GradientBoosting-GridSearchCV,yes
+69,0.92,0.9,recall,GradientBoosting-GridSearchCV,yes
+70,0.9,0.92,fscore,GradientBoosting-GridSearchCV,yes
+71,586.0,740.0,support,GradientBoosting-GridSearchCV,yes
+72,0.88,0.94,precision,xgboost,yes
+73,0.93,0.9,recall,xgboost,yes
+74,0.91,0.92,fscore,xgboost,yes
+75,586.0,740.0,support,xgboost,yes
+76,0.33,0.99,precision,Bagging-GridSearchCV,no
+77,0.93,0.86,recall,Bagging-GridSearchCV,no
+78,0.49,0.92,fscore,Bagging-GridSearchCV,no
+79,585.0,7692.0,support,Bagging-GridSearchCV,no
+80,0.86,0.94,precision,xgboost-GridSearchCV,yes
+81,0.94,0.88,recall,xgboost-GridSearchCV,yes
+82,0.89,0.91,fscore,xgboost-GridSearchCV,yes
+83,586.0,740.0,support,xgboost-GridSearchCV,yes
+84,0.64,0.99,precision,xgboost,no
+85,0.89,0.96,recall,xgboost,no
+86,0.74,0.98,fscore,xgboost,no
+87,585.0,7692.0,support,xgboost,no
+88,0.53,0.99,precision,xgboost-GridSearchCV,no
+89,0.91,0.94,recall,xgboost-GridSearchCV,no
+90,0.67,0.97,fscore,xgboost-GridSearchCV,no
+91,585.0,7692.0,support,xgboost-GridSearchCV,no
+92,0.88,0.94,precision,MultinomialNB,yes
+93,0.92,0.9,recall,MultinomialNB,yes
+94,0.9,0.92,fscore,MultinomialNB,yes
+95,586.0,740.0,support,MultinomialNB,yes
+96,0.88,0.94,precision,MultinomialNB-GridSearchCV,yes
+97,0.92,0.9,recall,MultinomialNB-GridSearchCV,yes
+98,0.9,0.92,fscore,MultinomialNB-GridSearchCV,yes
+99,586.0,740.0,support,MultinomialNB-GridSearchCV,yes
+100,0.65,0.99,precision,MultinomialNB,no
+101,0.92,0.96,recall,MultinomialNB,no
+102,0.76,0.98,fscore,MultinomialNB,no
+103,585.0,7692.0,support,MultinomialNB,no
+104,0.81,0.97,precision,Random Forests-GridSearchCV,yes
+105,0.96,0.82,recall,Random Forests-GridSearchCV,yes
+106,0.88,0.89,fscore,Random Forests-GridSearchCV,yes
+107,586.0,740.0,support,Random Forests-GridSearchCV,yes
+108,0.65,0.99,precision,MultinomialNB-GridSearchCV,no
+109,0.92,0.96,recall,MultinomialNB-GridSearchCV,no
+110,0.76,0.98,fscore,MultinomialNB-GridSearchCV,no
+111,585.0,7692.0,support,MultinomialNB-GridSearchCV,no
+112,0.85,0.95,precision,Support Vector,yes
+113,0.94,0.87,recall,Support Vector,yes
+114,0.89,0.91,fscore,Support Vector,yes
+115,586.0,740.0,support,Support Vector,yes
+116,0.87,0.96,precision,Support Vector - GridSearchCV,yes
+117,0.95,0.89,recall,Support Vector - GridSearchCV,yes
+118,0.91,0.92,fscore,Support Vector - GridSearchCV,yes
+119,586.0,740.0,support,Support Vector - GridSearchCV,yes
+120,0.9,0.97,precision,Random Forests,no
+121,0.6,1.0,recall,Random Forests,no
+122,0.72,0.98,fscore,Random Forests,no
+123,585.0,7692.0,support,Random Forests,no
+124,0.44,0.99,precision,Gradient Boosting,no
+125,0.93,0.91,recall,Gradient Boosting,no
+126,0.6,0.95,fscore,Gradient Boosting,no
+127,585.0,7692.0,support,Gradient Boosting,no
+128,0.67,0.99,precision,Support Vector,no
+129,0.85,0.97,recall,Support Vector,no
+130,0.75,0.98,fscore,Support Vector,no
+131,585.0,7692.0,support,Support Vector,no
+132,0.74,0.98,precision,Logestic  Regression / Full-GridSearchCV,no
+133,0.77,0.98,recall,Logestic  Regression / Full-GridSearchCV,no
+134,0.76,0.98,fscore,Logestic  Regression / Full-GridSearchCV,no
+135,585.0,7692.0,support,Logestic  Regression / Full-GridSearchCV,no
+136,0.75,0.98,precision,Logestic  Regression / Full-GridSearchCV,no
+137,0.78,0.98,recall,Logestic  Regression / Full-GridSearchCV,no
+138,0.76,0.98,fscore,Logestic  Regression / Full-GridSearchCV,no
+139,585.0,7692.0,support,Logestic  Regression / Full-GridSearchCV,no

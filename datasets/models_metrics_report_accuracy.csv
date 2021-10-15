@@ -1,0 +1,71 @@
+,score,metric,model,balanced
+0,1.0,R_train,Logestic  Regression / L2,no
+1,0.97,R_test,Logestic  Regression / L2,no
+2,1.0,R_train,Logestic  Regression / L2,no
+3,0.97,R_test,Logestic  Regression / L2,no
+4,1.0,R_train,Decision Tree,no
+5,0.95,R_test,Decision Tree,no
+6,0.96,R_train,Logestic  Regression / L1,no
+7,0.95,R_test,Logestic  Regression / L1,no
+8,1.0,R_train,Decision Tree,yes
+9,0.85,R_test,Decision Tree,yes
+10,0.88,R_train,Decision Tree/GridSearchCV,yes
+11,0.84,R_test,Decision Tree/GridSearchCV,yes
+12,0.99,R_train,Bagging,yes
+13,0.86,R_test,Bagging,yes
+14,0.88,R_train,Bagging-GridSearchCV,yes
+15,0.85,R_test,Bagging-GridSearchCV,yes
+16,1.0,R_train,Bagging,no
+17,0.95,R_test,Bagging,no
+18,1.0,R_train,Random Forests,yes
+19,0.92,R_test,Random Forests,yes
+20,1.0,R_train,ExtraTrees,yes
+21,0.92,R_test,ExtraTrees,yes
+22,1.0,R_train,ExtraTrees,no
+23,0.96,R_test,ExtraTrees,no
+24,0.91,R_train,Adaboost,yes
+25,0.89,R_test,Adaboost,yes
+26,0.94,R_train,Adaboost-GridSearchCV,yes
+27,0.9,R_test,Adaboost-GridSearchCV,yes
+28,0.93,R_train,Adaboost,no
+29,0.92,R_test,Adaboost,no
+30,0.93,R_train,Gradient Boosting,yes
+31,0.9,R_test,Gradient Boosting,yes
+32,0.95,R_train,Adaboost-GridSearchCV,no
+33,0.94,R_test,Adaboost-GridSearchCV,no
+34,0.99,R_train,GradientBoosting-GridSearchCV,yes
+35,0.91,R_test,GradientBoosting-GridSearchCV,yes
+36,0.98,R_train,xgboost,yes
+37,0.91,R_test,xgboost,yes
+38,0.91,R_train,Bagging-GridSearchCV,no
+39,0.86,R_test,Bagging-GridSearchCV,no
+40,0.95,R_train,xgboost-GridSearchCV,yes
+41,0.9,R_test,xgboost-GridSearchCV,yes
+42,0.98,R_train,xgboost,no
+43,0.96,R_test,xgboost,no
+44,0.97,R_train,xgboost-GridSearchCV,no
+45,0.94,R_test,xgboost-GridSearchCV,no
+46,0.94,R_train,MultinomialNB,yes
+47,0.91,R_test,MultinomialNB,yes
+48,0.94,R_train,MultinomialNB-GridSearchCV,yes
+49,0.91,R_test,MultinomialNB-GridSearchCV,yes
+50,0.96,R_train,MultinomialNB,no
+51,0.96,R_test,MultinomialNB,no
+52,0.92,R_train,Random Forests-GridSearchCV,yes
+53,0.88,R_test,Random Forests-GridSearchCV,yes
+54,0.96,R_train,MultinomialNB-GridSearchCV,no
+55,0.96,R_test,MultinomialNB-GridSearchCV,no
+56,0.94,R_train,Support Vector,yes
+57,0.9,R_test,Support Vector,yes
+58,0.94,R_train,Support Vector - GridSearchCV,yes
+59,0.91,R_test,Support Vector - GridSearchCV,yes
+60,1.0,R_train,Random Forests,no
+61,0.97,R_test,Random Forests,no
+62,0.94,R_train,Gradient Boosting,no
+63,0.91,R_test,Gradient Boosting,no
+64,0.98,R_train,Support Vector,no
+65,0.96,R_test,Support Vector,no
+66,1.0,R_train,Logestic  Regression / Full-GridSearchCV,no
+67,0.97,R_test,Logestic  Regression / Full-GridSearchCV,no
+68,1.0,R_train,Logestic  Regression / Full-GridSearchCV,no
+69,0.97,R_test,Logestic  Regression / Full-GridSearchCV,no
