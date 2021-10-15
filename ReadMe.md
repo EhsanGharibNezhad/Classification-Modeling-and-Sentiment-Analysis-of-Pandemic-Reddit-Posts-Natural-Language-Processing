@@ -1,6 +1,7 @@
 # <b> Classification Modeling and Sentiment Analysis of Pandemic Reddit Posts: Natural Language Processing </b> 
   
-##  Investigator: Ehsan Gharib-Nezhad
+###  Investigator: Ehsan Gharib-Nezhad
+
 [Linkedin]:(https://www.linkedin.com/in/ehsan-gharib-nezhad/)   
 ---
 
