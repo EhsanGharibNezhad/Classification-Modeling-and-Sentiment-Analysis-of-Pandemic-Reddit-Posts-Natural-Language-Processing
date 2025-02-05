@@ -40,27 +40,27 @@ The COVID-19 pandemic is one of the most significant global events in modern his
 ### `notebooks/`
 
 #### Step 1: Reddit Data Scraping
-- [`1_data-collection-Covid19Positive_subreddit.ipynb`](notebooks/1_data-collection-Covid19Positive_subreddit.ipynb)
-- [`1_data-collectionPrepPandemic.ipynb`](notebooks/1_data-collectionPrepPandemic.ipynb)
+- [`1_data-collection-Covid19Positive_subreddit.ipynb`](notebooks/1__data-collection-Covid19Positive_subreddit.ipynb)
+- [`1_data-collectionPrepPandemic.ipynb`](notebooks/1__data-collectionPrepPandemic.ipynb)
 
 #### Step 2: Text Processing
-- [`2_1_text_processing_subreddit_covid19positive_v1.ipynb`](notebooks/2_1_text_processing_subreddit_covid19positive_v1.ipynb)
-- [`2_2_text_processing_subreddit_PrepPandemic_v2.ipynb`](notebooks/2_2_text_processing_subreddit_PrepPandemic_v2.ipynb)
-- [`2_3_Combined_cleaned_post_processed_datasets.ipynb`](notebooks/2_3_Combined_cleaned_post_processed_datasets.ipynb)
+- [`2_1_text_processing_subreddit_covid19positive_v1.ipynb`](notebooks/2_1__text_processing_subreddit_covid19positive_v1.ipynb)
+- [`2_2_text_processing_subreddit_PrepPandemic_v2.ipynb`](notebooks/2_2__text_processing_subreddit_PrepPandemic_v2.ipynb)
+- [`2_3_Combined_cleaned_post_processed_datasets.ipynb`](notebooks/2_3__Combined_cleaned_post_processed_datasets.ipynb)
 
 #### Step 3: Exploratory Data Analysis
-- [`3_ExploratoryDataAnalysis_EDA.ipynb`](notebooks/3_ExploratoryDataAnalysis_EDA.ipynb)
+- [`3_ExploratoryDataAnalysis_EDA.ipynb`](notebooks/3__ExploratoryDataAnalysis_EDA.ipynb)
 
 #### Step 4: NLP Classification Models
 - Logistic Regression, Decision Trees, Random Forest, Gradient Boosting, SVM, Naive Bayes, and more.
 
 #### Step 5: Sentiment Analysis
-- [`5-1_sentiment_analysis_VADER.ipynb`](notebooks/5-1_sentiment_analysis_VADER.ipynb)
-- [`5-2_sentiment_analysis_Spacy.ipynb`](notebooks/5-2_sentiment_analysis_Spacy.ipynb)
-- [`5-3_sentiment_analysis_textblob_NaiveBayesClassifier.ipynb`](notebooks/5-3_sentiment_analysis_textblob_NaiveBayesClassifier.ipynb)
+- [`5-1_sentiment_analysis_VADER.ipynb`](notebooks/5-1__sentiment_analysis_VADER.ipynb)
+- [`5-2_sentiment_analysis_Spacy.ipynb`](notebooks/5-2__sentiment_analysis_Spacy.ipynb)
+- [`5-3_sentiment_analysis_textblob_NaiveBayesClassifier.ipynb`](notebooks/5-3__sentiment_analysis_textblob_NaiveBayesClassifier.ipynb)
 
 #### Step 6: Model Comparison
-- [`6_compare_all_modeling_results.ipynb`](notebooks/6_compare_all_modeling_results.ipynb)
+- [`6_compare_all_modeling_results.ipynb`](notebooks/6__compare_all_modeling_results.ipynb)
 
 ### `datasets/`
 
