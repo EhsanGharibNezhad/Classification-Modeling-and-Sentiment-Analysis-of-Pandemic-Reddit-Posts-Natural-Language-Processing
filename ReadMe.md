@@ -1,188 +1,142 @@
-# <b> Classification Modeling and Sentiment Analysis of Pandemic Reddit Posts: Natural Language Processing </b> 
+# **Classification Modeling and Sentiment Analysis of Pandemic Reddit Posts: Natural Language Processing**
   
-###  Investigator: Ehsan Gharib-Nezhad
+## Investigator: Ehsan Gharib-Nezhad
 
-<p>
-  <a href="https://www.linkedin.com/in/ehsan-gharib-nezhad/" rel="nofollow noreferrer">
-    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
-  </a> &nbsp; 
-  <a href="https://github.com/EhsanGharibNezhad/" rel="nofollow noreferrer">
-    <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
-  </a>
-</p>
----
-
-<br></br>
-# <a id = 'ProblemStatement'>Problem Statement</b></a>
-
-With no doubt, the pandemic is one of the most unforgettable and unwelcomed events in our life and history.
-Natural Language Processing (NLP) serves as a bridge between humans and computers. NLP provides strong statistical tools to convert the written or verbal language into the machine version to perform several studies including differentiating/classify posts, sentiment analysis, and grammar correction. 
-In this project, ~30,000 posts from the subreddit [Covid19Positive](https://www.reddit.com/r/COVID19positive/) and ~2,300 posts from the subreddit [PandemicPreps](https://www.reddit.com/r/PandemicPreps/) are scraped and their text is processed. Then, more than ten different NLP models such as Logistic regression and Random Forest are performed to classify their posts. In addition, *TextBlob* and *Multinomial Naive Bayes* methods are utilized to analyze sentiments.   
-
+[![LinkedIn](https://i.stack.imgur.com/gVE0j.png)](https://www.linkedin.com/in/ehsan-gharib-nezhad/) &nbsp; [![GitHub](https://i.stack.imgur.com/tskMh.png)](https://github.com/EhsanGharibNezhad/)
 
 ---
 
-<br></br>
-# <a id = 'Content'> Content </b></a>
+## Problem Statement
 
-- [Problem Statement](#ProblemStatement)
-- [Content](#Content)    
-- [Repo Structure](#RepoStructure)    
-
-    - [Data Dictionary](#ddict)
-    - [Background](#Background)
-    - [1. Data Scarpping: Application Programming Interface](#api)
-   	- [2. Text Normalization](#Text_Normalization)
-    	- [2.1. Tokenization](#Tokenization)
-    	- [2.2. Lemmatization](#Lemmatization)
-    	- [2.3. Stemming](#Stemming)
-    - [Methodology](#Methodology)    
-    	- [Sentiment Analysis](#Sentiment)	
-    - [Exploratory Data Analysis](#eda)    
-    - [Results](#Results)    
-    - [Conclusion](#Conclusion)
-    - [Recommendations](#Recommendations)
-    - [References](#references)
-
-
+The COVID-19 pandemic is one of the most significant global events in modern history. Natural Language Processing (NLP) acts as a bridge between human communication and computational analysis, offering robust statistical tools to analyze and classify text data. This project processes approximately 30,000 posts from the subreddit [Covid19Positive](https://www.reddit.com/r/COVID19positive/) and ~2,300 posts from [PandemicPreps](https://www.reddit.com/r/PandemicPreps/). Using over ten NLP models, including Logistic Regression and Random Forest, posts are classified based on their content. Additionally, sentiment analysis is conducted using *TextBlob* and *Multinomial Naive Bayes*.
 
 ---
-# <a id = 'RepoStructure'> Repo Structure </b></a>
-## notebooks/ <br />
 
-*Setp 1: Reddit Data Scraping:*\
-&nbsp; &nbsp; &nbsp; __ [1__data-collection-Covid19Positive_subreddit.ipynb](notebooks/1__data-collection-Covid19Positive_subreddit.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [1__data-collectionPrepPandemic.ipynb](notebooks/1__data-collectionPrepPandemic.ipynb)<br />
+## Table of Contents
 
-*Setp 2: Text Processing:*\
-&nbsp; &nbsp; &nbsp; __ [2_1__text_processing_subreddit_covid19positive_v1.ipynb](notebooks/2_1__text_processing_subreddit_covid19positive_v1.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [2_2__text_processing_subreddit_PrepPandemic_v2.ipynb](notebooks/2_2__text_processing_subreddit_PrepPandemic_v2.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [2_3__Combined_cleaned_post_processed_datasets.ipynb](notebooks/2_3__Combined_cleaned_post_processed_datasets.ipynb)<br />
-
-*Setp 3: Exploratory Data Analysis:*\
-&nbsp; &nbsp; &nbsp; __ [3__ExploratoryDataAnalysis_EDA.ipynb](notebooks/3__ExploratoryDataAnalysis_EDA.ipynb)<br />
-
-*Setp 4: NLP Models: Classifiers*\
-&nbsp; &nbsp; &nbsp; __ [4-1__model_Logestic_Regression.ipynb](notebooks/4-1__model_Logestic_Regression.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-2__model_Logestic_Regression-Imbalanced.ipynb](notebooks/4-2__model_Logestic_Regression-Imbalanced.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-3__model_Decision_Trees.ipynb](notebooks/4-3__model_Decision_Trees.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-4__model_Bootstrapping_Bagging.ipynb](notebooks/4-4__model_Bootstrapping_Bagging.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-5__model_Random_Forests.ipynb](notebooks/4-5__model_Random_Forests.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-6__model_Extremely_Randomized_Trees__ExtraTrees.ipynb](notebooks/4-6__model_Extremely_Randomized_Trees__ExtraTrees.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-7__model_Adaboost.ipynb](notebooks/4-7__model_Adaboost.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-8__model_Gradient_Boosting.ipynb](notebooks/4-8__model_Gradient_Boosting.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-9__model_xgbooster.ipynb](notebooks/4-9__model_xgbooster.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-10__model_Naive_Bayes.ipynb](notebooks/4-10__model_Naive_Bayes.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4-11__model_Support_Vector_Machines_SVMs.ipynb](notebooks/4-11__model_Support_Vector_Machines_SVMs.ipynb)<br />
-
-
-*Setp 5: NLP Models: Sentiment Analysis*\
-&nbsp; &nbsp; &nbsp; __ [5-1__sentiment_analysis_VADER.ipynb](notebooks/5-1__sentiment_analysis_VADER.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [5-2__sentiment_analysis_Spacy.ipynb](notebooks/5-2__sentiment_analysis_Spacy.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [5-3__sentiment_analysis_textblob_NaiveBayesClassifier.ipynb](notebooks/5-3__sentiment_analysis_textblob_NaiveBayesClassifier.ipynb)<br />
-
-*Setp 6: NLP Classifiers: Compare Modeling Metrics*\
-&nbsp; &nbsp; &nbsp; __ [6__compare_all_modeling_results.ipynb](notebooks/6__compare_all_modeling_results.ipynb)<br />
-
-
-## datasets/<br />
-*Unprocessed data collected from sub Reddits:*\
-&nbsp; &nbsp; &nbsp; __ [preprocessed_covid19positive_reddit_LAST.csv](datasets/preprocessed_covid19positive_reddit_LAST.csv)<br />
-&nbsp; &nbsp; &nbsp; __ [preprocessed_df_PandemicPreps_reddit_LAST.csv](datasets/preprocessed_df_PandemicPreps_reddit_LAST.csv)<br />
-
-*Text processed dataset ready for modeling phase:*\
-&nbsp; &nbsp; &nbsp; __ [text_processed_PandemicPreps_Mar2020_Mar2021.csv](datasets/text_processed_PandemicPreps_Mar2020_Mar2021.csv)<br />
-&nbsp; &nbsp; &nbsp; __ [text_processed_covid19positive_Mar2020_Mar2021.csv](datasets/text_processed_covid19positive_Mar2020_Mar2021.csv)<br />
-&nbsp; &nbsp; &nbsp; __ [text_processed_all_posts_combined_imbalanced.csv](datasets/text_processed_all_posts_combined_imbalanced.csv)<br />
-&nbsp; &nbsp; &nbsp; __ [text_processed_all_posts_combined.csv](datasets/text_processed_all_posts_combined.csv)<br />
-
-
-*Modeling results: Accuracy, Precision, Recall, Confusion Matrix:*\
-&nbsp; &nbsp; &nbsp; __ [models_metrics_report_confusionMatrix.csv](datasets/models_metrics_report_confusionMatrix.csv)<br />
-&nbsp; &nbsp; &nbsp; __ [models_metrics_report_precision_recall.csv](datasets/models_metrics_report_precision_recall.csv)<br />
-&nbsp; &nbsp; &nbsp; __ [models_metrics_report_accuracy.csv](datasets/models_metrics_report_accuracy.csv)<br />
-
-
-[presentation.pdf](presentation.pdf)<br />
-
-[ReadMe.md](ReadMe.md)<br />
+- [Problem Statement](#problem-statement)
+- [Repo Structure](#repo-structure)
+- [Data Dictionary](#data-dictionary)
+- [Background](#background)
+- [1. Data Scraping: API](#data-scraping-api)
+- [2. Text Normalization](#text-normalization)
+  - [2.1. Tokenization](#tokenization)
+  - [2.2. Lemmatization](#lemmatization)
+  - [2.3. Stemming](#stemming)
+- [Methodology](#methodology)
+  - [Sentiment Analysis](#sentiment-analysis)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Results](#results)
+- [Conclusion](#conclusion)
+- [Recommendations](#recommendations)
+- [References](#references)
 
 ---
+
+
+
+## Repo Structure
+
+### `notebooks/`
+
+#### Step 1: Reddit Data Scraping
+- [`1_data-collection-Covid19Positive_subreddit.ipynb`](notebooks/1_data-collection-Covid19Positive_subreddit.ipynb)
+- [`1_data-collectionPrepPandemic.ipynb`](notebooks/1_data-collectionPrepPandemic.ipynb)
+
+#### Step 2: Text Processing
+- [`2_1_text_processing_subreddit_covid19positive_v1.ipynb`](notebooks/2_1_text_processing_subreddit_covid19positive_v1.ipynb)
+- [`2_2_text_processing_subreddit_PrepPandemic_v2.ipynb`](notebooks/2_2_text_processing_subreddit_PrepPandemic_v2.ipynb)
+- [`2_3_Combined_cleaned_post_processed_datasets.ipynb`](notebooks/2_3_Combined_cleaned_post_processed_datasets.ipynb)
+
+#### Step 3: Exploratory Data Analysis
+- [`3_ExploratoryDataAnalysis_EDA.ipynb`](notebooks/3_ExploratoryDataAnalysis_EDA.ipynb)
+
+#### Step 4: NLP Classification Models
+- Logistic Regression, Decision Trees, Random Forest, Gradient Boosting, SVM, Naive Bayes, and more.
+
+#### Step 5: Sentiment Analysis
+- [`5-1_sentiment_analysis_VADER.ipynb`](notebooks/5-1_sentiment_analysis_VADER.ipynb)
+- [`5-2_sentiment_analysis_Spacy.ipynb`](notebooks/5-2_sentiment_analysis_Spacy.ipynb)
+- [`5-3_sentiment_analysis_textblob_NaiveBayesClassifier.ipynb`](notebooks/5-3_sentiment_analysis_textblob_NaiveBayesClassifier.ipynb)
+
+#### Step 6: Model Comparison
+- [`6_compare_all_modeling_results.ipynb`](notebooks/6_compare_all_modeling_results.ipynb)
+
+### `datasets/`
+
+- Raw and preprocessed datasets
+- Model performance reports (Accuracy, Precision, Recall, Confusion Matrix)
+
+### Additional Files
+- [`presentation.pdf`](presentation.pdf)
+- [`ReadMe.md`](ReadMe.md)
+
 ---
-# <a id = 'ddict'>Data <b>Dictionary</b></a>
 
+## Data Dictionary
 
-|feature name|data type|Description|
-|---|---|---|
-| selftext |*object*|Original Reddit posts with no text processing|
-| subreddit|*object*|Subreddit category: r\Covid19Positive and r\PandemicPreps|
-| created_utc|*int64*|Reddit posting date|
-| author|*object*|Author ID|
-| num_comments|*int64*|Number of comments/reply to that post|
-| post|*object*| Reddit post after text precessing with normal/unstemmed words|
-| token|*object*| Reddit post after text precessing with word stemming|
+| Feature Name  | Data Type | Description |
+|--------------|-----------|-------------|
+| selftext     | *object*  | Original Reddit posts (unprocessed) |
+| subreddit    | *object*  | Subreddit category: r/Covid19Positive or r/PandemicPreps |
+| created_utc  | *int64*   | Timestamp of Reddit post creation |
+| author       | *object*  | Unique author ID |
+| num_comments | *int64*   | Number of comments on the post |
+| post         | *object*  | Processed Reddit post (normalized, unstemed words) |
+| token        | *object*  | Processed Reddit post (stemmed words) |
 
 ---
+
+
+## Background
+
+### 1. Data Scraping: API
+
+The pushshift.io Reddit API provides enhanced search and retrieval capabilities for Reddit comments and submissions. More details can be found [here](https://github.com/pushshift/api).
+
+### 2. Text Normalization
+
+Text preprocessing and normalization are essential steps in NLP. These steps convert raw text into a standard form suitable for analysis. Common text processing steps include:
+
+- Lowercasing
+- Removing punctuation & special characters
+- Handling emojis and emoticons
+- Stop word removal
+- Spelling correction
+- Removing URLs and HTML tags
+- Tokenization
+- Stemming & Lemmatization
+
+#### 2.1 Tokenization
+
+Tokenization is the process of breaking text into individual units (tokens). Examples include:
+
+- **Sentence Tokenization:** Splitting text into sentences.
+- **Word Tokenization:** Splitting sentences into words.
+- **N-grams:** Extracting groups of consecutive words (bigrams, trigrams, etc.).
+
+In this project, `nltk.tokenize` is used for tokenization:
+```python
+from nltk.tokenize import sent_tokenize, word_tokenize
+```
+
+#### 2.2 Lemmatization
+
+Lemmatization reduces words to their base form (lemma) while preserving meaning. We use `WordNetLemmatizer` from `nltk`:
+```python
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+```
+
+#### 2.3 Stemming
+
+Stemming reduces words to their root form using heuristic rules. We use `PorterStemmer`:
+```python
+from nltk.stem import PorterStemmer
+stemmer = PorterStemmer()
+```
+
 ---
-# <a id = 'Background'>Background</a> 
-## 1. <a id = 'api'> Data Scarpping: Application Programming Interface</a> 
-The pushshift.io Reddit API was designed and created by the /r/datasets mod team to help provide enhanced functionality and search capabilities for searching Reddit comments and submissions [[ref]](https://github.com/pushshift/api).
-
-## 2. <a id = 'Text_Normalization'>Text Normalization</a> 
-Text preprocessing and normalization is a crucial step in Natural Language Processing (NLP) and it means converting the text into the standard form. Examples of text preprossessing include [[ref]](https://towardsdatascience.com/text-preprocessing-for-data-scientist-3d2419c8199d):
-
-- *Lower casing*
-- *Removing puctuations*
-- *Revoving special characters*
-- *Handeling emojis and emoticons (removing them or replacing them with words)* 
-- *Stop word removals*
-- *Common word removal*
-- *Rare word removal*
-- *Spelling correction* 
-- *Removing URLs and HTML tags* 
-- *Tokenization* 
-- *Stemming* 
-- *Lemmatization* 
-
-Some of these methods and their python tools will be discussed in detail in the following.
-
-### 2.1. <a id = 'Tokenization'> Tokenization  </a> 
-This is the first step in text processing and cleaning which consists of separating or tokenizing words from the text [[ref](https://web.stanford.edu/~jurafsky/slp3/)]. Although English words are separated by whitespaces, there are many cases like "San Francisco" which should be treated as a single word. On the other hand, contractions such as "I'm" are another example that needs to be treated separately. Tokenization can be divided into two steps: Paragraph to a sentence or *sentence tokenization*, and sentence to words or *Word Tokenization*. In this project, we implemented the following tools from `NLTK` for this purpose:
-
-`from nltk.tokenize import sent_tokenize, word_tokenize`  
-
-As a part of tokenization, the following methods might be utilized as well [3]: 
-- Bigrams: Tokens consist of two consecutive words known as bigrams.
-- Trigrams: Tokens consist of three consecutive words known as trigrams.
-- Ngrams: Tokens consist of ’N’ number of consecutive words known as n-grams
-In this project, processed word tokens are embedded into a list and N-gram assessment is done using the following scripts:
-
-`(pd.Series(nltk.ngrams(words, ngram_value)).value_counts())`  
-
-in which, `ngram_value` is 2, 3, 4, 5, etc. For detailed discussion, check [[ref](https://towardsdatascience.com/from-dataframe-to-n-grams-e34e29df3460)]. Note that in the tokenization, *stopwords* such as "the", "an", "at" will be eliminated as well using the following script:
-
-`from nltk.corpus import stopwords`\
-`stopwords.words('english')`
-
-
-
-
-### 2.2. <a id = 'Lemmatization'>  Lemmatization </a> 
-Another phase for processing the text is lemmatization which includes the simplification of words based on their root. For example, *spoke*, and *spoken* are all forms of the verb *speak*.
-
-`from nltk.stem import WordNetLemmatizer`\
-`lemmatizer = WordNetLemmatizer()`
-
-
-### 2.3. <a id = 'Stemming'> Stemming </a> 
-Stemming is the in-depth version of lemmatization in which all words are converted to their stem root. For instance, *computes*, *computing*, *computer*, *computational* are all from the same root "compute"
-
-`from nltk.stem.porter import PorterStemmer`\
-`p_stemmer = PorterStemmer()`
-
-
-A good overview the the text processing/standarilizing can be found at [[ref](https://medium.com/@jeevanchavan143/nlp-tokenization-stemming-lemmatization-bag-of-words-tf-idf-pos-7650f83c60be) and [ref](https://towardsdatascience.com/text-preprocessing-for-data-scientist-3d2419c8199d)].
-
 
 
 # <a id = 'modeling_methodology'>3. Modeling Methodology to Label Subreddit Posts</a>
@@ -355,12 +309,13 @@ An overview of the final results are presented in the following infograph:
      
 # <a id = 'Conclusion'>Conclusion</b>
 
-Logistic Regression is found to be the best model for classification because of the following reasons: 
-- Provides the highest accuracy scores, ~99% and ~96% for training and testing datasets 
-- Works great with ultra-imbalanced samples (~93% vs. ~7%)
-- High rates for true positive (91.06% out of 93%) and true negative (5.5% out of 7%)
-- Low scores for false positive (1.57%) and false-negative (1.87%)
-- High scores for precision and recall (~98%) 
+Logistic Regression emerges as the most effective model for classification due to the following key reasons:
+
+- Achieves high accuracy, with ~99% on the training set and ~96% on the testing set.
+- Performs exceptionally well with highly imbalanced datasets (~93% vs. ~7%).
+- Exhibits strong performance in terms of true positives (91.06% out of 93%) and true negatives (5.5% out of 7%).
+- Minimizes errors with low false positive (1.57%) and false negative (1.87%) rates.
+- Demonstrates impressive precision and recall, both around 98%.
 
 In addition, this model is….. 
 - Interpretable 
