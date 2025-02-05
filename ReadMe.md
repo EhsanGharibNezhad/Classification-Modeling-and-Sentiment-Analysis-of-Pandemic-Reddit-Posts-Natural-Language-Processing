@@ -53,19 +53,33 @@ The COVID-19 pandemic is one of the most significant global events in modern his
 
 #### Step 4: NLP Classification Models
 - Logistic Regression, Decision Trees, Random Forest, Gradient Boosting, SVM, Naive Bayes, and more.
+- [4-1__model_Logestic_Regression.ipynb](notebooks/4-1__model_Logestic_Regression.ipynb)<br />
+-  [4-2__model_Logestic_Regression-Imbalanced.ipynb](notebooks/4-2__model_Logestic_Regression-Imbalanced.ipynb)<br />
+-  [4-3__model_Decision_Trees.ipynb](notebooks/4-3__model_Decision_Trees.ipynb)<br />
+-  [4-4__model_Bootstrapping_Bagging.ipynb](notebooks/4-4__model_Bootstrapping_Bagging.ipynb)<br />
+-  [4-5__model_Random_Forests.ipynb](notebooks/4-5__model_Random_Forests.ipynb)<br />
+-  [4-6__model_Extremely_Randomized_Trees__ExtraTrees.ipynb](notebooks/4-6__model_Extremely_Randomized_Trees__ExtraTrees.ipynb)<br />
+-  [4-7__model_Adaboost.ipynb](notebooks/4-7__model_Adaboost.ipynb)<br />
+-  [4-8__model_Gradient_Boosting.ipynb](notebooks/4-8__model_Gradient_Boosting.ipynb)<br />
+- [4-9__model_xgbooster.ipynb](notebooks/4-9__model_xgbooster.ipynb)<br />
+-  [4-10__model_Naive_Bayes.ipynb](notebooks/4-10__model_Naive_Bayes.ipynb)<br />
+- [4-11__model_Support_Vector_Machines_SVMs.ipynb](notebooks/4-11__model_Support_Vector_Machines_SVMs.ipynb)<br />
 
-#### Step 5: Sentiment Analysis
-- [`5-1_sentiment_analysis_VADER.ipynb`](notebooks/5-1__sentiment_analysis_VADER.ipynb)
-- [`5-2_sentiment_analysis_Spacy.ipynb`](notebooks/5-2__sentiment_analysis_Spacy.ipynb)
-- [`5-3_sentiment_analysis_textblob_NaiveBayesClassifier.ipynb`](notebooks/5-3__sentiment_analysis_textblob_NaiveBayesClassifier.ipynb)
+
+#### Setp 5: NLP Models: Sentiment Analysis
+- [5-1__sentiment_analysis_VADER.ipynb](notebooks/5-1__sentiment_analysis_VADER.ipynb)<br />
+- [5-2__sentiment_analysis_Spacy.ipynb](notebooks/5-2__sentiment_analysis_Spacy.ipynb)<br />
+- [5-3__sentiment_analysis_textblob_NaiveBayesClassifier.ipynb](notebooks/5-3__sentiment_analysis_textblob_NaiveBayesClassifier.ipynb)<br />
+
 
 #### Step 6: Model Comparison
 - [`6_compare_all_modeling_results.ipynb`](notebooks/6__compare_all_modeling_results.ipynb)
 
 ### `datasets/`
 
-- Raw and preprocessed datasets
-- Model performance reports (Accuracy, Precision, Recall, Confusion Matrix)
+*Unprocessed data collected from sub Reddits:*\
+- [preprocessed_covid19positive_reddit_LAST.csv](datasets/preprocessed_covid19positive_reddit_LAST.csv)<br />
+- [preprocessed_df_PandemicPreps_reddit_LAST.csv](datasets/preprocessed_df_PandemicPreps_reddit_LAST.csv)<br />
 
 ### Additional Files
 - [`presentation.pdf`](presentation.pdf)
